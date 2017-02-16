@@ -1,0 +1,188 @@
+<div class="padding10 flex-grid">
+  <div class="row">
+    <h3>Contact Information</h3>
+  </div>
+  <div class="row" style="height: 40vh; overflow: scroll; overflow-x: hidden; font-size: small;">
+
+    <div class="flex-grid flex-dir-column">
+      <p class="fg-orange">Phone Details</p>
+      <div class="row">
+        <div class="form-field">
+          <label>Phone Type 1 <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <select>
+              <option value="male">MOBILE</option>
+              <option value="female">WORK</option>
+			  <option value="male">HOME</option>
+              <option value="female">FAX</option>
+            </select>
+          </div>
+        </div>
+
+		 <div class="form-field">
+          <label>Phone Number <span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+		
+		 <div class="form-field">
+          <label>Confirm Phone Number <span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+		
+        <div class="form-field">
+          <label>Country <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <select class="uppercase">
+              <option value="male">Ghana</option>
+              <option value="female">Burkina</option>
+			  <option value="male">Nigeria</option>
+              <option value="female">Togo</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="form-field">
+          <label>Confirm Country <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <select class="uppercase">
+              <option value="male">Ghana</option>
+              <option value="female">Burkina</option>
+			  <option value="male">Nigeria</option>
+              <option value="female">Togo</option>
+            </select>
+          </div>
+        </div>
+
+
+      </div>
+      <br>
+      <p class="fg-orange">Email Details</p>
+      <div class="row">
+
+        <div class="form-field">
+          <label>Email <span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+
+
+        <div class="form-field">
+          <label>Confirm Email<span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+
+      </div>
+      <br>
+      <p class="fg-orange">Location Details</p>
+      <div class="row">
+
+        <div class="form-field">
+          <label>Residential Address <span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+
+
+        <div class="form-field">
+          <label>Postal Address</label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+
+
+      </div>
+      <br>
+      <p class="fg-orange">Contact Person Details</p>
+      <div class="row">
+
+        <div class="form-field">
+          <label>Name <span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>Phone Type 1 <span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <select>
+              <option value="male">MOBILE</option>
+              <option value="female">WORK</option>
+			  <option value="male">HOME</option>
+              <option value="female">FAX</option>
+            </select>
+          </div>
+        </div>
+
+		 <div class="form-field">
+          <label>Phone Number<span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>
+		
+		 <div class="form-field">
+          <label>Confirm Phone Number<span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>
+
+		</div>
+		<br>
+		<div class="row">
+        <div class="form-field">
+          <label>Country <span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <select>
+              <option value="male">Ghana</option>
+              <option value="female">Burkina</option>
+			  <option value="male">Nigeria</option>
+              <option value="female">Togo</option>
+            </select>
+          </div>
+        </div>
+
+
+        <div class="form-field">
+          <label>Confirm Country <span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <select>
+              <option value="male">Ghana</option>
+              <option value="female">Burkina</option>
+			  <option value="male">Nigeria</option>
+              <option value="female">Togo</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-field">
+          <label>Address<span class="fg-red">*</span> </label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </div>
+  <br>
+  <div class="row flex-grid" style="height: 10vh;">
+    <button class="button bg-black fg-white uppercase">Previous</button>
+    <button (click)="nextStep()" class="button bg-black fg-white uppercase place-right">Next</button>
+  </div>
+</div>

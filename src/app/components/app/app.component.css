@@ -1,0 +1,11 @@
+.app-component{
+  width: 100vw;
+  height: 100vh;
+}
+
+.app-component-container{
+  margin-top: 3rem;
+  margin-left:5.25rem;
+  margin-right:6.25rem;
+}
+

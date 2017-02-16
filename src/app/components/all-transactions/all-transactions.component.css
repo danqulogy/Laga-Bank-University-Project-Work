@@ -1,0 +1,31 @@
+.all-transactions-component{
+  width: 100%;
+  height: 100%;
+}
+
+.all-transactions-nav{
+  height: 37px;
+}
+
+.all-transactions-nav > button{
+  border:none;
+  margin-left:5px;
+}
+.all-transactions-nav > input[type="text"]{
+  margin-top: 4.5px;
+  height: 36px;
+  border: 2px solid black;
+}
+.all-transactions-nav > input[placeholder]{
+  font-weight: bold;
+  padding-left: 1rem;
+}
+#all_transactions_table{
+  font-family: "Segoe UI", "Open Sans", sans-serif, serif;
+  font-weight: lighter;
+  font-size: small;
+}
+thead{
+  background: darkgoldenrod;
+  color: black;
+}

@@ -1,0 +1,33 @@
+<div style="height: 72vh;">
+    <div class="step-form-steps padding70 no-padding-bottom no-padding-top flex-grid">
+        <div class="row">
+            <hr id="steps-line-through" class="cell colspan11 bg-white">
+        </div>
+        <div id="formsteps" class="row flex-just-sa">
+            <button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step1')}" class="form-step-box b1">
+        <p>Personal Info</p>
+      </button>
+            <button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step2')}" class="form-step-box">
+        <p>Contact Info</p>
+      </button>
+            <!--<button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step3')}" class="form-step-box">-->
+            <!--<p>Employee Info</p>-->
+            <!--</button>-->
+            <button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step4')}" class="form-step-box">
+        <p>Institutional Details</p>
+      </button>
+            <button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step5')}" class="form-step-box">
+        <p>Financial Details</p>
+      </button>
+            <button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step6')}" class="form-step-box">
+        <p>E-Products</p>
+      </button>
+            <button [ngClass]="{'fg-white text-bold':isLinkActive('/registration-wizard/step7')}" class="form-step-box blast">
+        <p>Required Documents</p>
+      </button>
+        </div>
+    </div>
+    <div class="bg-white block-shadow " style="height: 62vh;">
+        <router-outlet></router-outlet>
+    </div>
+</div>

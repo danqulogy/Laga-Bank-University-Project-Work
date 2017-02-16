@@ -1,0 +1,47 @@
+<div class="login-form padding20 block-shadow">
+    <form #loginForm="ngForm">
+        <h3 class="text-light fg-orange">
+            <span class="mif-lock"></span><span class="uppercase text-bold"> Login to  Banking Service</span></h3>
+        <hr class="thin" />
+        <br />
+        <div class="input-control text full-size" data-role="input">
+            <label>User email:</label>
+            <input type="email" id="email" name="email" #email="ngModel" minlength="6" required [(ngModel)]="credentials.email">
+            <button class="button helper-button clear"><span class="mif-cross"></span></button>
+            <div *ngIf="email.errors && (email.dirty || email.touched)" class="bg-red padding5 fg-white">
+                <div [hidden]="!email.errors.required">
+                    Email is required
+                </div>
+                <div [hidden]="!email.errors.minlength">
+                    Character length is to short
+                </div>
+
+            </div>
+        </div>
+
+        <br /><br />
+        <br />
+        <div class="input-control password  full-size" data-role="input">
+            <label>User password:</label>
+            <input id="password" type="password" minlength="8" name="password" #password="ngModel" required [(ngModel)]="credentials.password">
+            <button class="button helper-button reveal"><span class="mif-looks"></span></button>
+            <div *ngIf="password.errors && (password.dirty || email.password)" class="bg-red padding5 fg-white">
+                <div [hidden]="!password.errors.required">
+                    Password is required
+                </div>
+                <div [hidden]="!password.errors.minlength">
+                    Character length is to short
+                </div>
+
+            </div>
+        </div>
+        <br />
+        <br />
+        <div class="form-actions">
+            <button (click)="login()" type="submit" [disabled]="!loginForm.form.valid" class="button disabled primary full-size">
+              <span *ngIf="!showAuthenticationLoader" class="uppercase">Login</span> <span *ngIf="showAuthenticationLoader" ><span class="mif-spinner mif-2x mif-ani-spin ani-fast"></span> Authenticating ...</span>
+            </button>
+            <button type="button" class="button bg-hover-darkBlue uppercase full-size success">I forgot my password? </button>
+        </div>
+    </form>
+</div>

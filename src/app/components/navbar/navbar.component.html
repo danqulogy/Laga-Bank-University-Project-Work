@@ -1,0 +1,23 @@
+<div class="lg-navbar flex-grid bg-white block-shadow">
+    <div class="row flex-dir-row">
+        <img class="cell colspan2 app-logo" src="assets/logo.jpg" alt="">
+        <ul class="cell fg-black colspan8 lg-topnav inline-list uppercase text-bold">
+            <li *ngIf="auth.currentUser" class="padding40  no-padding-top no-padding-bottom">
+                <a class="fg-hover-orange" routerLink="registration-wizard">
+                    <span class="mif-user-plus"></span> New Account</a>
+            </li>
+            <li *ngIf="auth.currentUser" class="padding40 no-padding-left no-padding-top no-padding-bottom">
+                <a class="fg-hover-orange" routerLink="all-transactions"> <span class="mif-list"></span> All Transactions</a>
+            </li>
+            <li *ngIf="auth.isAdminUser()">
+                <a class="fg-hover-orange" routerLink="manage">
+                    <span class="mif-cog"></span> Manage
+                </a>
+            </li>
+        </ul>
+        <div class="cell colspan2 flex-dir-row user-panel">
+            <button *ngIf="!auth.currentUser" [routerLink]="['login']" class="button bg-black fg-hover-yellow fg-white uppercase"> <span class="mif-lock"></span>Sign In</button>
+            <button *ngIf="auth.currentUser" (click)="logout()" class="button bg-black fg-hover-yellow fg-white uppercase"> <span class="mif-lock"></span>Sign Out</button>
+        </div>
+    </div>
+</div>

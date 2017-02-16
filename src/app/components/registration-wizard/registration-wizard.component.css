@@ -1,0 +1,29 @@
+.form-step-box{
+  background: black;
+  color: gold;
+  border:1px solid white;
+  height: 30px;
+  text-wrap:none;
+  margin:10px 10px;
+  border-radius: 5px;
+  /*min-width:140px;*/
+}
+.form-step-box.b1{
+  margin-left:0;
+}
+.form-step-box.blast{
+  margin-right:0;
+}
+.form-step-box >p{
+  line-height: 0.2rem;
+  padding: 0px 5px;
+  font-size: small;
+
+}
+#steps-line-through {
+  margin-top: 1.6rem;
+}
+#formsteps{
+  margin-top: -2rem;
+}
+

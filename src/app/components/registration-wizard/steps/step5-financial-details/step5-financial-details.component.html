@@ -1,0 +1,82 @@
+<div class="padding10 flex-grid">
+  <div class="row">
+    <h3>Financial Details</h3>
+  </div>
+  <br>
+  <div class="row" style="height: 40vh; overflow: scroll; overflow-x: hidden; font-size: small;">
+  
+    <div class="flex-grid flex-dir-column">
+      <div class="row">
+        <div class="form-field">
+          <label>Please select source <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <select>
+              <option value="male">Parents</option>
+              <option value="female">Family</option>
+			  <option value="male">Inheritance</option>
+              <option value="female">Self</option>
+            </select>
+          </div>
+        </div>
+
+        <!--<div class="form-field">
+          <label>Student ID <span class="fg-red">*</span></label>
+          <div class="input-control row flex-dir-row" data-role="input">
+            <input type="text">
+            <button style="width: 200px; margin-top:-1px;" class="button bg-gray fg-white"><span class="mif-plus"></span> Auto ID</button>
+          </div>
+        </div>-->
+
+        <div class="form-field">
+          <label>Personal Savings for the month <span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+		
+        <div class="form-field">
+          <label>Expected No. of Deposits[Amount] <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>
+		
+		
+		</div>
+		<br>
+		<br>
+		<br>
+		<div class="row">
+		<div class="form-field">
+          <label>Expected No. of Withdrawal[Amount] <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>		
+		
+		<div class="form-field">
+          <label>Expected No. of Withdrawal[Frequency] <span class="fg-red">*</span></label>
+          <div class="input-control select full-size">
+            <input type="text">
+          </div>
+        </div>
+		
+        <div class="form-field">
+          <label>Expected No. of Deposits[Frequency] <span class="fg-red">*</span></label>
+          <div class="input-control text full-size">
+            <input type="text">
+          </div>
+        </div>
+
+    </div>
+    </div>
+
+  </div>
+  <br>
+  <div class="row flex-dir-row-reverse" style="height: 10vh;">
+    <button (click)="nextStep()" class="button bg-black fg-white uppercase">Next</button>
+  </div>
+</div>
+<!--<p>
+  step5-financial-details works!
+</p>-->

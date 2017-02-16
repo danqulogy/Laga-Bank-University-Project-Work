@@ -1,0 +1,31 @@
+.lg-navbar{
+  width: 100%;
+  height:50px;
+}
+
+.app-logo{
+  height: 50px;
+  margin-right: 2rem;
+}
+.lg-topnav{
+  width: 60vw;
+  margin-right: 12px;
+}
+
+.lg-navbar > li{
+  height: 50px;
+}
+.lg-topnav>li>a{
+  text-decoration: none;
+  color: black;
+
+}
+.user-panel>button{
+  height: 50px;
+  margin-top:-1px;
+  border: none;
+  width: 8rem;
+}
+
+
+
